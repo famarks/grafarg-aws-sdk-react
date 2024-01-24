@@ -1,6 +1,6 @@
 {
   "name": "@grafarg/aws-sdk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Common AWS features for grafarg",
   "main": "dist/index.js",
   "scripts": {
