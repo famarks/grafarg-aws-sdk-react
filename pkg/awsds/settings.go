@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/grafana/grafana-plugin-sdk-go/backend"
+	"github.com/famarks/grafarg-plugin-sdk-go/backend"
 )
 
 const defaultRegion = "default"

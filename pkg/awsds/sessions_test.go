@@ -111,7 +111,7 @@ func TestNewSession_AssumeRole(t *testing.T) {
 		sess, err := cache.GetSession(defaultRegion, settings)
 		require.Error(t, err)
 		require.Nil(t, sess)
-		expectedError := "attempting to use assume role (ARN) which is disabled in grafana.ini"
+		expectedError := "attempting to use assume role (ARN) which is disabled in grafarg.ini"
 		assert.Equal(t, expectedError, err.Error())
 	})
 

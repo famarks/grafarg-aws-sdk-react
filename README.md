@@ -1,4 +1,4 @@
-# Grafana AWS SDK
+# Grafarg AWS SDK
 
 This is a common package that can be used for all amazon plugins.
 

@@ -46,7 +46,7 @@ exports[`ConnectionConfig should render component 1`] = `
         onTouchEnd={[Function]}
       >
         <div
-          className="css-1kfautg-grafana-select-value-container"
+          className="css-1kfautg-grafarg-select-value-container"
         >
           <div
             className="css-1c7qxsm"
@@ -217,7 +217,7 @@ exports[`ConnectionConfig should render component 1`] = `
         onTouchEnd={[Function]}
       >
         <div
-          className="css-1kfautg-grafana-select-value-container"
+          className="css-1kfautg-grafarg-select-value-container"
         >
           <div
             className="css-1c7qxsm"

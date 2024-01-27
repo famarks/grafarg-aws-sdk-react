@@ -52,7 +52,7 @@ const getProps = (propOverrides?: object) => {
 };
 
 const resetWindow = () => {
-  (window as any).grafanaBootData = {
+  (window as any).grafargBootData = {
     settings: {
       awsAllowedAuthProviders: [AwsAuthType.EC2IAMRole, AwsAuthType.Keys],
       awsAssumeRoleEnabled: false,
@@ -148,7 +148,7 @@ describe('ConnectionConfig', () => {
   });
 
   it('should use default auth if awsAllowedAuthProviders was not found on window obj', async () => {
-    (window as any).grafanaBootData = {
+    (window as any).grafargBootData = {
       settings: {},
     };
     const onOptionsChange = jest.fn();
@@ -167,7 +167,7 @@ describe('ConnectionConfig', () => {
   });
 
   it('should render assume role if awsAssumeRoleEnabled was not found on window obj', async () => {
-    (window as any).grafanaBootData = {
+    (window as any).grafargBootData = {
       settings: {},
     };
     const props = getProps();
@@ -177,7 +177,7 @@ describe('ConnectionConfig', () => {
   });
 
   it('should not render assume role if awsAssumeRoleEnabled was set to false', async () => {
-    (window as any).grafanaBootData = {
+    (window as any).grafargBootData = {
       settings: {
         awsAssumeRoleEnabled: false,
       },
@@ -189,7 +189,7 @@ describe('ConnectionConfig', () => {
   });
 
   it('should render assume role if awsAssumeRoleEnabled was set to true', async () => {
-    (window as any).grafanaBootData = {
+    (window as any).grafargBootData = {
       settings: {
         awsAssumeRoleEnabled: true,
       },
