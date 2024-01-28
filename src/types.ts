@@ -1,4 +1,4 @@
-import { DataSourceJsonData } from '@grafarg/data';
+import { DataSourceJsonData } from '@grafana/data';
 
 export enum AwsAuthType {
   Keys = 'keys',

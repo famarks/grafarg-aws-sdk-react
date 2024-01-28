@@ -1,12 +1,12 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Input, Select, InlineField, ButtonGroup, ToolbarButton, FieldSet } from '@grafarg/ui';
+import { Input, Select, InlineField, ButtonGroup, ToolbarButton, FieldSet } from '@grafana/ui';
 import {
   DataSourcePluginOptionsEditorProps,
   onUpdateDatasourceJsonDataOptionSelect,
   onUpdateDatasourceResetOption,
   onUpdateDatasourceJsonDataOption,
   onUpdateDatasourceSecureJsonDataOption,
-} from '@grafarg/data';
+} from '@grafana/data';
 
 import { standardRegions } from './regions';
 import { AwsAuthDataSourceJsonData, AwsAuthDataSourceSecureJsonData, AwsAuthType } from './types';
@@ -33,7 +33,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
     profile = options.database;
   }
 
-  const settings = (window as any).grafargBootData.settings;
+  const settings = (window as any).grafanaBootData.settings;
   const awsAllowedAuthProviders = settings.awsAllowedAuthProviders ?? [
     AwsAuthType.Default,
     AwsAuthType.Keys,
@@ -91,8 +91,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
             className="width-30"
             placeholder="default"
             value={profile}
-            onChange={onUpdateDatasourceJsonDataOption(props, 'profile')}
-          />
+            onChange={onUpdateDatasourceJsonDataOption(props, 'profile')} css={''}          />
         </InlineField>
       )}
 
@@ -101,7 +100,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
           <InlineField label="Access Key ID" labelWidth={28}>
             {props.options.secureJsonFields?.accessKey ? (
               <ButtonGroup className="width-30">
-                <Input disabled placeholder="Configured" />
+                <Input disabled placeholder="Configured" css={''} />
                 <ToolbarButton
                   icon="edit"
                   tooltip="Edit Access Key ID"
@@ -111,17 +110,16 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
               </ButtonGroup>
             ) : (
               <Input
-                className="width-30"
-                value={options.secureJsonData?.accessKey ?? ''}
-                onChange={onUpdateDatasourceSecureJsonDataOption(props, 'accessKey')}
-              />
+                  className="width-30"
+                  value={options.secureJsonData?.accessKey ?? ''}
+                  onChange={onUpdateDatasourceSecureJsonDataOption(props, 'accessKey')} css={''}              />
             )}
           </InlineField>
 
           <InlineField label="Secret Access Key" labelWidth={28}>
             {props.options.secureJsonFields?.secretKey ? (
               <ButtonGroup className="width-30">
-                <Input disabled placeholder="Configured" />
+                <Input disabled placeholder="Configured" css={''} />
                 <ToolbarButton
                   icon="edit"
                   type="button"
@@ -131,10 +129,9 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
               </ButtonGroup>
             ) : (
               <Input
-                className="width-30"
-                value={options.secureJsonData?.secretKey ?? ''}
-                onChange={onUpdateDatasourceSecureJsonDataOption(props, 'secretKey')}
-              />
+                  className="width-30"
+                  value={options.secureJsonData?.secretKey ?? ''}
+                  onChange={onUpdateDatasourceSecureJsonDataOption(props, 'secretKey')} css={''}              />
             )}
           </InlineField>
         </>
@@ -151,8 +148,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
               className="width-30"
               placeholder="arn:aws:iam:*"
               value={options.jsonData.assumeRoleArn || ''}
-              onChange={onUpdateDatasourceJsonDataOption(props, 'assumeRoleArn')}
-            />
+              onChange={onUpdateDatasourceJsonDataOption(props, 'assumeRoleArn')} css={''}            />
           </InlineField>
           <InlineField
             label="External ID"
@@ -163,8 +159,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
               className="width-30"
               placeholder="External ID"
               value={options.jsonData.externalId || ''}
-              onChange={onUpdateDatasourceJsonDataOption(props, 'externalId')}
-            />
+              onChange={onUpdateDatasourceJsonDataOption(props, 'externalId')} css={''}            />
           </InlineField>
         </>
       )}
@@ -174,8 +169,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
             className="width-30"
             placeholder={props.defaultEndpoint ?? 'https://{service}.{region}.amazonaws.com'}
             value={options.jsonData.endpoint || ''}
-            onChange={onUpdateDatasourceJsonDataOption(props, 'endpoint')}
-          />
+            onChange={onUpdateDatasourceJsonDataOption(props, 'endpoint')} css={''}          />
         </InlineField>
       )}
       <InlineField
