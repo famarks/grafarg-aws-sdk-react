@@ -16,7 +16,7 @@
     "index.js",
     "dist"
   ],
-  "repository": "github:famarks/grafarg-aws-sdk",
+  "repository": "github:famarks/grafarg-aws-sdk-react",
   "author": "Famarks",
   "license": "Apache-2.0",
   "dependencies": {},
