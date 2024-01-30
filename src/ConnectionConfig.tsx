@@ -1,12 +1,12 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Input, Select, InlineField, ButtonGroup, ToolbarButton, FieldSet } from '@grafana/ui';
+import { Input, Select, InlineField, ButtonGroup, ToolbarButton, FieldSet } from '@grafarg/ui';
 import {
   DataSourcePluginOptionsEditorProps,
   onUpdateDatasourceJsonDataOptionSelect,
   onUpdateDatasourceResetOption,
   onUpdateDatasourceJsonDataOption,
   onUpdateDatasourceSecureJsonDataOption,
-} from '@grafana/data';
+} from '@grafarg/data';
 
 import { standardRegions } from './regions';
 import { AwsAuthDataSourceJsonData, AwsAuthDataSourceSecureJsonData, AwsAuthType } from './types';
@@ -33,7 +33,7 @@ export const ConnectionConfig: FC<ConnectionConfigProps> = (props: ConnectionCon
     profile = options.database;
   }
 
-  const settings = (window as any).grafanaBootData.settings;
+  const settings = (window as any).grafargBootData.settings;
   const awsAllowedAuthProviders = settings.awsAllowedAuthProviders ?? [
     AwsAuthType.Default,
     AwsAuthType.Keys,

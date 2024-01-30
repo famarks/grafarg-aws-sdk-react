@@ -1176,15 +1176,32 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@grafana/aws-sdk@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@grafana/aws-sdk/-/aws-sdk-0.0.3.tgz#bc632c6c77971a5474acbe45847420503679fc75"
-  integrity sha512-V0PJLk+oU1C33knurXp8BkT5N2ctDu9b21zpK16vkJAs5aOiH/OaOhQ/IP9ipxYhB+b9PFjr8RXagV/8XJ8xwg==
+"@grafana/slate-react@0.22.9-grafana":
+  version "0.22.9-grafana"
+  resolved "https://registry.yarnpkg.com/@grafana/slate-react/-/slate-react-0.22.9-grafana.tgz#07f35f0ffc018f616b9f82fa6e5ba65fae75c6a0"
+  integrity sha512-9NYjwabVOUQ/e4Y/Wm+sgePM65rb/gju59D52t4O42HsIm9exXv+SLajEBF/HiLHzuH5V+5uuHajbzv0vuE2VA==
+  dependencies:
+    debug "^3.1.0"
+    get-window "^1.1.1"
+    is-window "^1.0.2"
+    lodash "^4.1.1"
+    memoize-one "^4.0.0"
+    prop-types "^15.5.8"
+    react-immutable-proptypes "^2.1.0"
+    selection-is-backward "^1.0.0"
+    slate-base64-serializer "^0.2.111"
+    slate-dev-environment "^0.2.2"
+    slate-hotkeys "^0.2.9"
+    slate-plain-serializer "^0.7.10"
+    slate-prop-types "^0.5.41"
+    slate-react-placeholder "^0.2.8"
+    tiny-invariant "^1.0.1"
+    tiny-warning "^0.0.3"
 
-"@grafana/data@7.5.17", "@grafana/data@^7.5.0":
-  version "7.5.17"
-  resolved "https://registry.yarnpkg.com/@grafana/data/-/data-7.5.17.tgz#43389cfb591db86926860af76e6a46e4e81dce60"
-  integrity sha512-6SE2p2VX6JGa2BYWMg+CWTflnZwduhFtEsQ12Lx5B8/QSLo/uQVQwkMm8N3RRdCR66CWKVqfCdyjIsLC/JKAqQ==
+"@grafarg/data@7.4.71", "@grafarg/data@^7.4.71":
+  version "7.4.71"
+  resolved "https://registry.yarnpkg.com/@grafarg/data/-/data-7.4.71.tgz#586032f81cd314cdea9e00de669a6b88452a3e51"
+  integrity sha512-jh37999AL3a6L47iGZxkL/Y85sIPcu4MzJelSSF4qLs9TJjNuBljSkZP+HGXSgKOpLv9YO+NetGwutUZu1XG5w==
   dependencies:
     "@braintree/sanitize-url" "4.0.0"
     "@types/d3-interpolate" "^1.3.1"
@@ -1195,21 +1212,21 @@
     rxjs "6.6.3"
     xss "1.0.6"
 
-"@grafana/e2e-selectors@7.5.17":
-  version "7.5.17"
-  resolved "https://registry.yarnpkg.com/@grafana/e2e-selectors/-/e2e-selectors-7.5.17.tgz#61c3819b5a704da2a8f181d8e944aa19ad1c579f"
-  integrity sha512-dKVKqlJ48vKXFhk5leiTyaHBujyhaszIZv5z0MZmNosAnNG6g/OvgXpKf8ALc8CYQ3BitGSZ/xqeHrrH87jqMg==
+"@grafarg/e2e-selectors@7.4.71":
+  version "7.4.71"
+  resolved "https://registry.yarnpkg.com/@grafarg/e2e-selectors/-/e2e-selectors-7.4.71.tgz#5c71747c04a5b67f4dc87a3972adcc69e24a278b"
+  integrity sha512-gH3jw0LLlRtCHEHG7EC5S/aA9kB7n6txnzpcb5rWi56zP4HgVluFgH/tIuUGU9kqzXIBoFRxhH12kg362zFIMQ==
   dependencies:
-    "@grafana/tsconfig" "^1.0.0-rc1"
+    "@grafarg/tsconfig" "^1.2.0-rc1"
     commander "5.0.0"
     execa "4.0.0"
     typescript "4.1.2"
     yaml "^1.8.3"
 
-"@grafana/eslint-config@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@grafana/eslint-config/-/eslint-config-2.3.0.tgz#2d053d488854e2fcbaa1ebc0ed4c0258fc014aa4"
-  integrity sha512-QX9QbgT6nehLU91HncdE0bXEaGLmB7tSyxyj60+lQYWPygaoFUCsQWKBYxBRsyTYQahQGqkfS+y3scvkCLDCcw==
+"@grafarg/eslint-config@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@grafarg/eslint-config/-/eslint-config-2.4.1.tgz#777d36971453e39e6fa2c607f0f50ef074b5ea2e"
+  integrity sha512-Y8J8qeTp0cbsNcYwHqsculKCCqcVpHWPR7CS32QnsYhFymeRcGtLMlE23Swk+NKQao2kBEkoSOPPzq4V1FNekg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "4.15.0"
     "@typescript-eslint/parser" "4.15.0"
@@ -1220,20 +1237,21 @@
     eslint-plugin-react "7.22.0"
     eslint-plugin-react-hooks "4.2.0"
     prettier "2.2.1"
-    typescript "4.1.3"
+    typescript "^4.2.4"
 
-"@grafana/toolkit@^7.5.1":
-  version "7.5.17"
-  resolved "https://registry.yarnpkg.com/@grafana/toolkit/-/toolkit-7.5.17.tgz#a2e08bbaf43b7959a09e0cb5ed3bb949a0f459bb"
-  integrity sha512-m0MBGqlV1T2NYhMOYR1XtJ47FR34BHUCwnlyOaugBXjlYn3cvWrBlMd7TG+QupcmcWHrCeRDxExXhwlM9u9CmA==
+"@grafarg/toolkit@^7.4.71":
+  version "7.4.71"
+  resolved "https://registry.yarnpkg.com/@grafarg/toolkit/-/toolkit-7.4.71.tgz#49db019e0678de4fcbe55f7776f8e65c578067d8"
+  integrity sha512-dN3k/sjF0ogJZherahAWmQ8UEmMB7Nmi2FCLHJupXeNA4ESQyBC+mvFt9XE+2pQyuBdoUk1qSl55q3vL5S1Nsg==
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/preset-env" "7.9.0"
-    "@grafana/data" "7.5.17"
-    "@grafana/eslint-config" "2.3.0"
-    "@grafana/tsconfig" "^1.0.0-rc1"
-    "@grafana/ui" "7.5.17"
+    "@grafarg/data" "7.4.71"
+    "@grafarg/eslint-config" "2.4.1"
+    "@grafarg/tsconfig" "^1.2.0-rc1"
+    "@grafarg/ui" "7.4.71"
     "@types/command-exists" "^1.2.0"
+    "@types/execa" "^0.9.0"
     "@types/expect-puppeteer" "3.3.1"
     "@types/fs-extra" "^8.1.0"
     "@types/inquirer" "^6.0.3"
@@ -1263,7 +1281,7 @@
     eslint-plugin-jsdoc "31.6.1"
     eslint-plugin-prettier "3.3.1"
     eslint-plugin-react-hooks "4.2.0"
-    execa "^2.0.0"
+    execa "^1.0.0"
     expect-puppeteer "4.1.1"
     file-loader "5.0.2"
     fork-ts-checker-webpack-plugin "1.0.0"
@@ -1309,21 +1327,21 @@
     url-loader "^2.0.1"
     webpack "4.41.5"
 
-"@grafana/tsconfig@^1.0.0-rc1":
-  version "1.0.0-rc1"
-  resolved "https://registry.yarnpkg.com/@grafana/tsconfig/-/tsconfig-1.0.0-rc1.tgz#d07ea16755a50cae21000113f30546b61647a200"
-  integrity sha512-nucKPGyzlSKYSiJk5RA8GzMdVWhdYNdF+Hh65AXxjD9PlY69JKr5wANj8bVdQboag6dgg0BFKqgKPyY+YtV4Iw==
+"@grafarg/tsconfig@^1.2.0-rc1":
+  version "1.2.0-rc1"
+  resolved "https://registry.yarnpkg.com/@grafarg/tsconfig/-/tsconfig-1.2.0-rc1.tgz#2ec3adc9196677ec3fc87d2cf0711c52cd5f860f"
+  integrity sha512-rGPOH5jH/JFUe2ufCPy+fJkD3Hf0tCqXykoZLbnzxkCWqEJ/D94CE5/La6XJf8lMB7brwWyCsuegH93NnKX74Q==
 
-"@grafana/ui@7.5.17", "@grafana/ui@^7.5.0":
-  version "7.5.17"
-  resolved "https://registry.yarnpkg.com/@grafana/ui/-/ui-7.5.17.tgz#54153f8a5a118663c544edc2fd9ef289ef2646cf"
-  integrity sha512-lV3iud2FCXwCvcd/i+GnxEHd4DMawQpp34jPdoRp+7I9+XVb677aj6S6BZDvLxS9MxyFklGnzBVuZfPh/yJPTg==
+"@grafarg/ui@7.4.71", "@grafarg/ui@^7.4.71":
+  version "7.4.71"
+  resolved "https://registry.yarnpkg.com/@grafarg/ui/-/ui-7.4.71.tgz#0e3e4951fcc96ec3f69fe1a67ec37d4e3e03b1bf"
+  integrity sha512-XX6tx4VdsGsJ++toqg8gdl+Jgc6ZKms7RNX92BWR7CXuClv0pZQiM6tlCFgQ/yhLy5P3TWR6Rc+BOHsKfXGgtA==
   dependencies:
     "@emotion/core" "10.0.27"
-    "@grafana/aws-sdk" "0.0.3"
-    "@grafana/data" "7.5.17"
-    "@grafana/e2e-selectors" "7.5.17"
-    "@grafana/tsconfig" "^1.0.0-rc1"
+    "@grafana/slate-react" "0.22.9-grafana"
+    "@grafarg/data" "7.4.71"
+    "@grafarg/e2e-selectors" "7.4.71"
+    "@grafarg/tsconfig" "^1.2.0-rc1"
     "@iconscout/react-unicons" "1.1.4"
     "@popperjs/core" "2.5.4"
     "@sentry/browser" "5.25.0"
@@ -1334,9 +1352,8 @@
     "@types/react-color" "3.0.1"
     "@types/react-select" "3.0.8"
     "@types/react-table" "7.0.12"
-    "@types/slate" "0.47.9"
-    "@types/slate-plain-serializer" "0.7.2"
-    "@types/slate-react" "0.22.9"
+    "@types/slate" "0.47.1"
+    "@types/slate-react" "0.22.5"
     "@visx/event" "1.3.0"
     "@visx/gradient" "1.0.0"
     "@visx/scale" "1.4.0"
@@ -1369,16 +1386,9 @@
     react-storybook-addon-props-combinations "1.1.0"
     react-table "7.0.0"
     react-transition-group "4.4.1"
-    slate "0.47.9"
-    slate-plain-serializer "0.7.11"
-    slate-react "0.22.10"
+    slate "0.47.8"
     tinycolor2 "1.4.1"
-    uplot "1.6.9"
-
-"@grafarg/tsconfig@^1.2.0-rc1":
-  version "1.2.0-rc1"
-  resolved "https://registry.yarnpkg.com/@grafarg/tsconfig/-/tsconfig-1.2.0-rc1.tgz#2ec3adc9196677ec3fc87d2cf0711c52cd5f860f"
-  integrity sha512-rGPOH5jH/JFUe2ufCPy+fJkD3Hf0tCqXykoZLbnzxkCWqEJ/D94CE5/La6XJf8lMB7brwWyCsuegH93NnKX74Q==
+    uplot "1.6.7"
 
 "@icons/material@^0.2.4":
   version "0.2.4"
@@ -2055,6 +2065,13 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
+"@types/execa@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@types/execa/-/execa-0.9.0.tgz#9b025d2755f17e80beaf9368c3f4f319d8b0fb93"
+  integrity sha512-mgfd93RhzjYBUHHV532turHC2j4l/qxsF/PbfDmprHDEUHmNZGlDn1CEsulGK3AfsPdhkWzZQT/S/k0UGhLGsA==
+  dependencies:
+    "@types/node" "*"
+
 "@types/expect-puppeteer@3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/expect-puppeteer/-/expect-puppeteer-3.3.1.tgz#46e5944bf425b86ea13a563c7c8b86901414988d"
@@ -2477,17 +2494,10 @@
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
   integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
 
-"@types/slate-plain-serializer@0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@types/slate-plain-serializer/-/slate-plain-serializer-0.7.2.tgz#e95c073526d6f737bf136e722a154ca8d5359dee"
-  integrity sha512-pscI7YAnK3yHpiVCGkKeBRCh0JIjjktdY4Wxp7L2jPQnK04uw7BTyH9zhFKx7NZ5OPfmJNZekhYHyvfzKP5mYQ==
-  dependencies:
-    "@types/slate" "*"
-
-"@types/slate-react@0.22.9":
-  version "0.22.9"
-  resolved "https://registry.yarnpkg.com/@types/slate-react/-/slate-react-0.22.9.tgz#9d7ad55fc10f408f02ca5a81bf4e7d5d88ef3d16"
-  integrity sha512-x8u/mpQhxmzxlwGzM1GLsGMTSRtNO7yjtoqo23k5nZzPrz5iuUdtmtlmxjHzl2x3hBE7KQUDn5JhyuUSBLtxVQ==
+"@types/slate-react@0.22.5":
+  version "0.22.5"
+  resolved "https://registry.yarnpkg.com/@types/slate-react/-/slate-react-0.22.5.tgz#a10796758aa6b3133e1c777959facbf8806959f7"
+  integrity sha512-WKJic5LlNRNUCnD6lEdlOZCcXWoDN8Ais2CmwVMn8pdt5Kh8hJsTYhXawNxOShPIOLVB+G+aVZNAXAAubEOpaw==
   dependencies:
     "@types/react" "*"
     "@types/slate" "*"
@@ -2501,10 +2511,10 @@
     "@types/react" "*"
     immutable "^3.8.2"
 
-"@types/slate@0.47.9":
-  version "0.47.9"
-  resolved "https://registry.yarnpkg.com/@types/slate/-/slate-0.47.9.tgz#ce212ba09bb2c0de470b59b496efeac739eff1b4"
-  integrity sha512-KzC0iNuZJkiKx0dMAC9PBF6TXZNd0l3hqVCF5/7GwCEnLDx6VsETAedAi4OjRpzObvL4x7n8ZS51+sgXHn/HvQ==
+"@types/slate@0.47.1":
+  version "0.47.1"
+  resolved "https://registry.yarnpkg.com/@types/slate/-/slate-0.47.1.tgz#6c66f82df085c764039eea2229be763f7e1906fd"
+  integrity sha512-2ZlnWI6/RYMXxeGFIeZtvmaXAeYAJh4ZVumziqVl77/liNEi9hOwkUTU2zFu+j/z21v385I2WVPl8sgadxfzXg==
   dependencies:
     "@types/react" "*"
     immutable "^3.8.2"
@@ -5804,21 +5814,6 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-2.1.0.tgz#e5d3ecd837d2a60ec50f3da78fd39767747bbe99"
-  integrity sha512-Y/URAVapfbYy2Xp/gb6A0E7iR8xeqOCXsuuaoMn7A5PzrXUK84E1gyiEfq0wQd/GHA6GsoHWwhNq8anb0mleIw==
-  dependencies:
-    cross-spawn "^7.0.0"
-    get-stream "^5.0.0"
-    is-stream "^2.0.0"
-    merge-stream "^2.0.0"
-    npm-run-path "^3.0.0"
-    onetime "^5.1.0"
-    p-finally "^2.0.0"
-    signal-exit "^3.0.2"
-    strip-final-newline "^2.0.0"
-
 execa@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-4.1.0.tgz#4e5491ad1572f2f17a77d388c6c857135b22847a"
@@ -8943,13 +8938,6 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npm-run-path@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-3.1.0.tgz#7f91be317f6a466efed3c9f2980ad8a4ee8b0fa5"
-  integrity sha512-Dbl4A/VfiVGLgQv29URL9xshU8XDY1GeLy+fsaZ1AA8JDSfjvr5P5+pzRbWqRSBxk6/DW7MIh8lTM/PaGnP2kg==
-  dependencies:
-    path-key "^3.0.0"
-
 npm-run-path@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-4.0.1.tgz#b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"
@@ -9191,11 +9179,6 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
-
-p-finally@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-2.0.1.tgz#bd6fcaa9c559a096b680806f4d657b3f0f240561"
-  integrity sha512-vpm09aKwq6H9phqRQzecoDpD8TmVyGw70qmWlyq5onxY7tqyTTFVvxMykxQSQKILBSFlbXpypIw2T1Ml7+DDtw==
 
 p-is-promise@^2.0.0:
   version "2.1.0"
@@ -11597,7 +11580,7 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-slate-base64-serializer@^0.2.112:
+slate-base64-serializer@^0.2.111:
   version "0.2.115"
   resolved "https://registry.yarnpkg.com/slate-base64-serializer/-/slate-base64-serializer-0.2.115.tgz#438e051959bde013b50507f3144257e74039ff7f"
   integrity sha512-GnLV7bUW/UQ5j7rVIxCU5zdB6NOVsEU6YWsCp68dndIjSGTGLaQv2+WwV3NcnrGGZEYe5qgo33j2QWrPws2C1A==
@@ -11619,52 +11602,25 @@ slate-hotkeys@^0.2.9:
     is-hotkey "0.1.4"
     slate-dev-environment "^0.2.2"
 
-slate-plain-serializer@0.7.11:
-  version "0.7.11"
-  resolved "https://registry.yarnpkg.com/slate-plain-serializer/-/slate-plain-serializer-0.7.11.tgz#74ff6eb949e9fbd92ad98ed833d74d5082f2688b"
-  integrity sha512-vzXQ68GiHHcTUcAB6ggf2qN/sX9BoLs77SMHacp5Gkg+oHAA/NxRzRH4efDAhpiJqfJZDrA3rQySK6+Y7KAuwg==
-
-slate-plain-serializer@^0.7.11:
+slate-plain-serializer@^0.7.10:
   version "0.7.13"
   resolved "https://registry.yarnpkg.com/slate-plain-serializer/-/slate-plain-serializer-0.7.13.tgz#6de8f5c645dd749f1b2e4426c20de74bfd213adf"
   integrity sha512-TtrlaslxQBEMV0LYdf3s7VAbTxRPe1xaW10WNNGAzGA855/0RhkaHjKkQiRjHv5rvbRleVf7Nxr9fH+4uErfxQ==
 
-slate-prop-types@^0.5.42:
+slate-prop-types@^0.5.41:
   version "0.5.44"
   resolved "https://registry.yarnpkg.com/slate-prop-types/-/slate-prop-types-0.5.44.tgz#da60b69c3451c3bd6cdd60a45d308eeba7e83c76"
   integrity sha512-JS0iW7uaciE/W3ADuzeN1HOnSjncQhHPXJ65nZNQzB0DF7mXVmbwQKI6cmCo/xKni7XRJT0JbWSpXFhEdPiBUA==
 
-slate-react-placeholder@^0.2.9:
+slate-react-placeholder@^0.2.8:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/slate-react-placeholder/-/slate-react-placeholder-0.2.9.tgz#30f450a05d4871c7d1a27668ebe7907861e7ca74"
   integrity sha512-YSJ9Gb4tGpbzPje3eNKtu26hWM8ApxTk9RzjK+6zfD5V/RMTkuWONk24y6c9lZk0OAYNZNUmrnb/QZfU3j9nag==
 
-slate-react@0.22.10:
-  version "0.22.10"
-  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.22.10.tgz#01296dadb707869ace6cb21d336c90bedfb567bf"
-  integrity sha512-B2Ms1u/REbdd8yKkOItKgrw/tX8klgz5l5x6PP86+oh/yqmB6EHe0QyrYlQ9fc3WBlJUVTOL+nyAP1KmlKj2/w==
-  dependencies:
-    debug "^3.1.0"
-    get-window "^1.1.1"
-    is-window "^1.0.2"
-    lodash "^4.1.1"
-    memoize-one "^4.0.0"
-    prop-types "^15.5.8"
-    react-immutable-proptypes "^2.1.0"
-    selection-is-backward "^1.0.0"
-    slate-base64-serializer "^0.2.112"
-    slate-dev-environment "^0.2.2"
-    slate-hotkeys "^0.2.9"
-    slate-plain-serializer "^0.7.11"
-    slate-prop-types "^0.5.42"
-    slate-react-placeholder "^0.2.9"
-    tiny-invariant "^1.0.1"
-    tiny-warning "^0.0.3"
-
-slate@0.47.9:
-  version "0.47.9"
-  resolved "https://registry.yarnpkg.com/slate/-/slate-0.47.9.tgz#090597dd790e79718f782994907d34a903739443"
-  integrity sha512-EK4O6b7lGt+g5H9PGw9O5KCM4RrOvOgE9mPi3rzQ0zDRlgAb2ga4TdpS6XNQbrsJWsc8I1fjaSsUeCqCUhhi9A==
+slate@0.47.8:
+  version "0.47.8"
+  resolved "https://registry.yarnpkg.com/slate/-/slate-0.47.8.tgz#1e987b74d8216d44ec56154f0e6d3c722ce21e6e"
+  integrity sha512-/Jt0eq4P40qZvtzeKIvNb+1N97zVICulGQgQoMDH0TI8h8B+5kqa1YeckRdRnuvfYJm3J/9lWn2V3J1PrF+hag==
   dependencies:
     debug "^3.1.0"
     direction "^0.1.5"
@@ -12566,10 +12522,10 @@ typescript@4.1.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.2.tgz#6369ef22516fe5e10304aae5a5c4862db55380e9"
   integrity sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
 
-typescript@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
-  integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
+typescript@^4.2.4:
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typical@^2.6.1:
   version "2.6.1"
@@ -12674,10 +12630,10 @@ upath@^1.1.1:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-uplot@1.6.9:
-  version "1.6.9"
-  resolved "https://registry.yarnpkg.com/uplot/-/uplot-1.6.9.tgz#0f10e10b5882cb80eb58d63f870b8a77e8d95962"
-  integrity sha512-uWIegRdqbqJwnB5SDBt29lyJIgHLIqt5AnwlLGxuA3gKKXGtY7d68RR6oDF2u5pK9jpIb1djrQnm5n0BiAnUgA==
+uplot@1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/uplot/-/uplot-1.6.7.tgz#d3faaec899791ee3fdf5d2835b19a33d9117566a"
+  integrity sha512-6aYZmGywrHTqTgT1GfYHnU77xDUdutR1EJbVX4P9I45CGrtXN77S69/cgW2BXPL1lR4g6V6bh7ujJsFyvHw1hg==
 
 upper-case@^1.1.1:
   version "1.1.3"

@@ -1,4 +1,4 @@
-import { SelectableValue } from '@grafana/data';
+import { SelectableValue } from '@grafarg/data';
 import { AwsAuthType } from './types';
 
 export const awsAuthProviderOptions = [
